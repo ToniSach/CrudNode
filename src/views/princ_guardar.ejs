@@ -1,0 +1,38 @@
+<%- include ('partials/header')  %>
+<div class="">
+
+</div>
+<div class="col-md-5">
+    <div class="card">
+        <div class="card-body">
+            <form action="/add" method="POST">
+                <div class="form-group">
+                    <input type="text" name="NameDragon" placeholder="Name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="number" name="AgeDragon" placeholder="Edad" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="PicDragon" placeholder="SRCFoto" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="MedioPowers" placeholder="Medio por el cual obtuvo poderes" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="MethodPowers" placeholder="Metodo por el cual usa poderes" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="PhisicPowers" placeholder="Poderes Fisicos" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="ElementhalPowers" placeholder="Poderes Elementales" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+<%- include ('partials/footer')  %>

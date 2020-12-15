@@ -1,0 +1,114 @@
+<%- include ('partials/header')  %>
+
+<div class="container">
+    <div class="abs-center">
+        <div class="row mt-5">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th>Nombre</th>
+                    <th>Elementales</th>
+                </thead>
+                <tbody>
+                    <% if(data) {%>
+                        <% for (var i = 0; i< data.length; i++) { %>
+                            <tr>
+                                <td><%= data[i].NameDragon %></td>
+                                <td><%= datas[i].ElementhalPowers %></td>
+                            </tr>
+                        <% } %>
+                    <% } %>
+                </tbody>
+            </table>
+        </div> 
+    </div>
+</div>
+<div class="container">
+    <div class="abs-center">
+        <div class="row mt-5">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th>Edad</th>
+                    <th>Metodo Poderes</th>
+                </thead>
+                <tbody>
+                    <% if(data) {%>
+                        <% for (var i = 0; i< data.length; i++) { %>
+                            <tr>
+                                <td><%= data3[i].AgeDragon %></td>
+                                <td><%= data4[i].MethodPowers %></td>
+                            </tr>
+                        <% } %>
+                    <% } %>
+                </tbody>
+            </table>
+        </div> 
+    </div>
+</div>
+<div class="container">
+    <div class="abs-center">
+        <div class="row mt-5">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th>Foto</th>
+                    <th>Fisicos</th>
+                </thead>
+                <tbody>
+                    <% if(data) {%>
+                        <% for (var i = 0; i< data.length; i++) { %>
+                            <tr>
+                                <td><%= data5[i].PicDragon %></td>
+                                <td><%= data6[i].PhisicPowers %></td>
+                            </tr>
+                        <% } %>
+                    <% } %>
+                </tbody>
+            </table>
+        </div> 
+    </div>
+</div>
+<div class="container">
+    <div class="abs-center">
+        <div class="row mt-5">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th>id Dragon</th>
+                    <th>id Poderes</th>
+                </thead>
+                <tbody>
+                    <% if(data) {%>
+                        <% for (var i = 0; i< data.length; i++) { %>
+                            <tr>
+                                <td><%= data7[i].idDragon %></td>
+                                <td><%= data8[i].idPowers %></td>
+                            </tr>
+                        <% } %>
+                    <% } %>
+                </tbody>
+            </table>
+        </div> 
+    </div>
+</div>
+<div class="container">
+    <div class="abs-center">
+        <div class="row mt-5">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th>Nombre</th>
+                    <th>Fisicos</th>
+                </thead>
+                <tbody>
+                    <% if(data) {%>
+                        <% for (var i = 0; i< data.length; i++) { %>
+                            <tr>
+                                <td><%= data[i].NameDragon %></td>
+                                <td><%= data6[i].PhisicPowers %></td>
+                            </tr>
+                        <% } %>
+                    <% } %>
+                </tbody>
+            </table>
+        </div> 
+    </div>
+</div>
+
+<%- include ('partials/footer')  %>

@@ -1,0 +1,49 @@
+<%- include ('partials/header')  %>
+<div class="container">
+    <div class="abs-center">
+        <div class="row mt-5">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>SrcFoto</th>
+                    <th>Medio Poderes</th>
+                    <th>Metodo Poderes</th>
+                    <th>Fisicos</th>
+                    <th>Elementales</th>
+                    <th>Acciones</th>
+                </thead>
+                <tbody>
+                    <% if(data) {%>
+                        <% for (var i = 0; i< data.length; i++) { %>
+                            <tr>
+                                <td><%= data[i].idDragon %></td>
+                                <td><%= data[i].NameDragon %></td>
+                                <td><%= data[i].AgeDragon %></td>
+                                <td><%= data[i].PicDragon %></td>
+                                <td><%= datas[i].MedioPowers %></td>
+                                <td><%= datas[i].MethodPowers %></td>
+                                <td><%= datas[i].PhisicPowers %></td>
+                                <td><%= datas[i].ElementhalPowers %></td>
+                                <td>
+                                    <a href="/delete/<%= data[i].idDragon %>" class="btn btn-danger">Eliminar</a>
+                                    <a href="/update/<%= data[i].idDragon %>" class="btn btn-info">Modificar</a>
+                                </td>
+                            </tr>
+                        <% } %>
+                    <% } %>
+                </tbody>
+            </table>
+        </div>  
+        
+    </div>
+  </div>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-20">
+        </div>
+    </div>
+</div>
+
+<%- include ('partials/footer')  %>

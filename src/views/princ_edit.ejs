@@ -1,0 +1,38 @@
+<%- include ('partials/header')  %>
+
+<div class="container">
+    <div class="row -mt-5">
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/update/<%= data.idDragon %>" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="NameDragon" value="<%= data.NameDragon %>" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="AgeDragon" value="<%= data.AgeDragon %>" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="PicDragon" value="<%= data.PicDragon %>" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="MedioPowers" value="<%= datas.MedioPowers %>" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="MethodPowers" value="<%= datas.MethodPowers %>" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="PhisicPowers" value="<%= datas.PhisicPowers %>" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="ElementhalPowers" value="<%= datas.ElementhalPowers %>" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include ('partials/footer')  %>
